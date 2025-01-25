@@ -1,44 +1,33 @@
-# Credit Card Checker
+<div align="center">
 
-A beautiful CLI tool to validate credit card numbers using Luhn's algorithm and display detailed card information.
+# 💳 Credit Card Validator Pro
 
-## Features
+[![Python](https://img.shields.io/badge/Python-3.6%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-- Validates credit card numbers using Luhn's algorithm
-- Identifies card type (Visa, MasterCard, American Express, Discover)
-- Validates expiration date
-- Validates CVV
-- Beautiful CLI interface with colored output
-- Supports two input formats:
-  - `number|mm/yy|cvv`
-  - `number|mm|yy|cvv`
+*A powerful CLI tool for credit card validation and analysis*
 
-## Installation
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Examples](#-examples)
 
-1. Clone this repository
-2. Install the required dependencies:
-```bash
-pip install -r requirements.txt
-```
+</div>
 
-## Usage
+---
 
-Run the program:
-```bash
-python cc_checker.py
-```
+## ✨ Features
 
-Enter card details in either format:
-- `number|mm/yy|cvv` (e.g., `4532015112830366|12/25|123`)
-- `number|mm|yy|cvv` (e.g., `4532015112830366|12|25|123`)
+### Core Functionality
+- 🔍 **Advanced Luhn Algorithm** - Industry-standard card number validation
+- 🎯 **Smart Card Detection** - Automatically identifies 20+ card types
+- ⚡ **Real-time Validation** - Instant feedback as you type
+- 🔐 **CVV Verification** - Smart CVV length checking based on card type
+- 📅 **Date Intelligence** - Advanced expiration date validation with grace period
 
-Type `exit` to quit the program.
-
-## Example Output
-
-The program will display:
-- Card number validation (Luhn's algorithm)
-- Card type
-- Expiration date validation
-- CVV validation
-- Final result (VALID/INVALID) 
+### Card Types Supported
+- 💠 Visa (13-16 digits)
+- 💠 MasterCard (16 digits)
+- 💠 American Express (15 digits)
+- 💠 Discover (16 digits)
+- 💠 JCB (16-19 digits)
+- 💠 Diners Club (14-19 digits)
+- 💠 UnionPay (16-19 digits)
